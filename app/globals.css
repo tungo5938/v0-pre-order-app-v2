@@ -1,0 +1,152 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated to authentic Shopify Polaris colors */
+  --background: #f6f6f7;
+  --foreground: #212b36;
+  --card: #ffffff;
+  --card-foreground: #212b36;
+  --popover: #ffffff;
+  --popover-foreground: #212b36;
+  --primary: #008060;
+  --primary-foreground: #ffffff;
+  --secondary: #f4f6f8;
+  --secondary-foreground: #212b36;
+  --muted: #f4f6f8;
+  --muted-foreground: #454f5b;
+  --accent: #008060;
+  --accent-foreground: #ffffff;
+  --destructive: #d72c0d;
+  --destructive-foreground: #ffffff;
+  --border: #e1e3e5;
+  --input: #ffffff;
+  --ring: #008060;
+  --chart-1: #008060;
+  --chart-2: #d97706;
+  --chart-3: #a16207;
+  --chart-4: #f9fafb;
+  --chart-5: #454f5b;
+  --radius: 0.375rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #212b36;
+  --sidebar-primary: #008060;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #008060;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #e1e3e5;
+  --sidebar-ring: #008060;
+  /* Updated font variable to Inter */
+  --font-inter: "Inter", sans-serif;
+
+  /* Added Shopify-specific status colors */
+  --success: #00a047;
+  --success-foreground: #ffffff;
+  --warning: #ffc453;
+  --warning-foreground: #212b36;
+  --info: #006fbb;
+  --info-foreground: #ffffff;
+}
+
+.dark {
+  --background: #1a1a1a;
+  --foreground: #f6f6f7;
+  --card: #202020;
+  --card-foreground: #f6f6f7;
+  --popover: #202020;
+  --popover-foreground: #f6f6f7;
+  --primary: #00d4aa;
+  --primary-foreground: #1a1a1a;
+  --secondary: #303030;
+  --secondary-foreground: #f6f6f7;
+  --muted: #303030;
+  --muted-foreground: #8c9196;
+  --accent: #00d4aa;
+  --accent-foreground: #1a1a1a;
+  --destructive: #ff6d6d;
+  --destructive-foreground: #f6f6f7;
+  --border: #303030;
+  --input: #202020;
+  --ring: #00d4aa;
+  --chart-1: #00d4aa;
+  --chart-2: #f97316;
+  --chart-3: #eab308;
+  --chart-4: #475569;
+  --chart-5: #8c9196;
+  --sidebar: #1a1a1a;
+  --sidebar-foreground: #f6f6f7;
+  --sidebar-primary: #00d4aa;
+  --sidebar-primary-foreground: #1a1a1a;
+  --sidebar-accent: #00d4aa;
+  --sidebar-accent-foreground: #1a1a1a;
+  --sidebar-border: #303030;
+  --sidebar-ring: #00d4aa;
+
+  --success: #36fba1;
+  --success-foreground: #1a1a1a;
+  --warning: #ffda82;
+  --warning-foreground: #1a1a1a;
+  --info: #54a3ff;
+  --info-foreground: #1a1a1a;
+}
+
+@theme inline {
+  /* Updated font reference to Inter */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Added Shopify status color tokens */
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
