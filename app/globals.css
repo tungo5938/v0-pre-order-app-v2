@@ -4,96 +4,102 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated to authentic Shopify Polaris colors */
-  --background: #f6f6f7;
-  --foreground: #212b36;
-  --card: #ffffff;
-  --card-foreground: #212b36;
-  --popover: #ffffff;
-  --popover-foreground: #212b36;
-  --primary: #008060;
-  --primary-foreground: #ffffff;
-  --secondary: #f4f6f8;
-  --secondary-foreground: #212b36;
-  --muted: #f4f6f8;
-  --muted-foreground: #454f5b;
-  --accent: #008060;
-  --accent-foreground: #ffffff;
-  --destructive: #d72c0d;
-  --destructive-foreground: #ffffff;
-  --border: #e1e3e5;
-  --input: #ffffff;
-  --ring: #008060;
-  --chart-1: #008060;
-  --chart-2: #d97706;
-  --chart-3: #a16207;
-  --chart-4: #f9fafb;
-  --chart-5: #454f5b;
+  /* Updated to authentic Shopify Polaris color tokens */
+  --background: rgb(241, 241, 241); /* --p-color-bg */
+  --foreground: rgb(48, 48, 48); /* --p-color-text */
+  --card: rgb(255, 255, 255); /* --p-color-bg-surface */
+  --card-foreground: rgb(48, 48, 48); /* --p-color-text */
+  --popover: rgb(255, 255, 255); /* --p-color-bg-surface */
+  --popover-foreground: rgb(48, 48, 48); /* --p-color-text */
+  --primary: rgb(48, 48, 48); /* --p-color-bg-fill-brand */
+  --primary-foreground: rgb(255, 255, 255); /* --p-color-text-brand-on-bg-fill */
+  --secondary: rgb(247, 247, 247); /* --p-color-bg-surface-secondary */
+  --secondary-foreground: rgb(48, 48, 48); /* --p-color-text */
+  --muted: rgb(243, 243, 243); /* --p-color-bg-surface-tertiary */
+  --muted-foreground: rgb(97, 97, 97); /* --p-color-text-secondary */
+  --accent: rgb(48, 48, 48); /* --p-color-bg-fill-brand */
+  --accent-foreground: rgb(255, 255, 255); /* --p-color-text-brand-on-bg-fill */
+  --destructive: rgb(199, 10, 36); /* --p-color-bg-fill-critical */
+  --destructive-foreground: rgb(255, 250, 251); /* --p-color-text-critical-on-bg-fill */
+  --border: rgb(227, 227, 227); /* --p-color-border */
+  --input: rgb(253, 253, 253); /* --p-color-input-bg-surface */
+  --ring: rgb(0, 91, 211); /* --p-color-border-focus */
+  --chart-1: rgb(4, 123, 93); /* --p-color-bg-fill-success */
+  --chart-2: rgb(255, 184, 0); /* --p-color-bg-fill-warning */
+  --chart-3: rgb(255, 230, 0); /* --p-color-bg-fill-caution */
+  --chart-4: rgb(145, 208, 255); /* --p-color-bg-fill-info */
+  --chart-5: rgb(97, 97, 97); /* --p-color-text-secondary */
   --radius: 0.375rem;
-  --sidebar: #ffffff;
-  --sidebar-foreground: #212b36;
-  --sidebar-primary: #008060;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #008060;
-  --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #e1e3e5;
-  --sidebar-ring: #008060;
-  /* Updated font variable to Inter */
+  --sidebar: rgb(255, 255, 255); /* --p-color-bg-surface */
+  --sidebar-foreground: rgb(48, 48, 48); /* --p-color-text */
+  --sidebar-primary: rgb(48, 48, 48); /* --p-color-bg-fill-brand */
+  --sidebar-primary-foreground: rgb(255, 255, 255); /* --p-color-text-brand-on-bg-fill */
+  --sidebar-accent: rgb(48, 48, 48); /* --p-color-bg-fill-brand */
+  --sidebar-accent-foreground: rgb(255, 255, 255); /* --p-color-text-brand-on-bg-fill */
+  --sidebar-border: rgb(227, 227, 227); /* --p-color-border */
+  --sidebar-ring: rgb(0, 91, 211); /* --p-color-border-focus */
+
+  /* Updated font variable to Inter for Polaris compliance */
   --font-inter: "Inter", sans-serif;
 
-  /* Added Shopify-specific status colors */
-  --success: #00a047;
-  --success-foreground: #ffffff;
-  --warning: #ffc453;
-  --warning-foreground: #212b36;
-  --info: #006fbb;
-  --info-foreground: #ffffff;
+  /* Added authentic Polaris status colors */
+  --success: rgb(4, 123, 93); /* --p-color-bg-fill-success */
+  --success-foreground: rgb(250, 255, 251); /* --p-color-text-success-on-bg-fill */
+  --warning: rgb(255, 184, 0); /* --p-color-bg-fill-warning */
+  --warning-foreground: rgb(37, 26, 0); /* --p-color-text-warning-on-bg-fill */
+  --info: rgb(145, 208, 255); /* --p-color-bg-fill-info */
+  --info-foreground: rgb(0, 33, 51); /* --p-color-text-info-on-bg-fill */
+  --caution: rgb(255, 230, 0); /* --p-color-bg-fill-caution */
+  --caution-foreground: rgb(51, 46, 0); /* --p-color-text-caution-on-bg-fill */
 }
 
 .dark {
-  --background: #1a1a1a;
-  --foreground: #f6f6f7;
-  --card: #202020;
-  --card-foreground: #f6f6f7;
-  --popover: #202020;
-  --popover-foreground: #f6f6f7;
-  --primary: #00d4aa;
-  --primary-foreground: #1a1a1a;
-  --secondary: #303030;
-  --secondary-foreground: #f6f6f7;
-  --muted: #303030;
-  --muted-foreground: #8c9196;
-  --accent: #00d4aa;
-  --accent-foreground: #1a1a1a;
-  --destructive: #ff6d6d;
-  --destructive-foreground: #f6f6f7;
-  --border: #303030;
-  --input: #202020;
-  --ring: #00d4aa;
-  --chart-1: #00d4aa;
-  --chart-2: #f97316;
-  --chart-3: #eab308;
-  --chart-4: #475569;
-  --chart-5: #8c9196;
-  --sidebar: #1a1a1a;
-  --sidebar-foreground: #f6f6f7;
-  --sidebar-primary: #00d4aa;
-  --sidebar-primary-foreground: #1a1a1a;
-  --sidebar-accent: #00d4aa;
-  --sidebar-accent-foreground: #1a1a1a;
-  --sidebar-border: #303030;
-  --sidebar-ring: #00d4aa;
+  /* Updated dark mode colors to match Polaris inverse colors */
+  --background: rgb(26, 26, 26); /* --p-color-bg-inverse */
+  --foreground: rgb(227, 227, 227); /* --p-color-text-inverse */
+  --card: rgb(48, 48, 48); /* --p-color-bg-surface-inverse */
+  --card-foreground: rgb(227, 227, 227); /* --p-color-text-inverse */
+  --popover: rgb(48, 48, 48); /* --p-color-bg-surface-inverse */
+  --popover-foreground: rgb(227, 227, 227); /* --p-color-text-inverse */
+  --primary: rgb(227, 227, 227); /* --p-color-bg-surface-brand */
+  --primary-foreground: rgb(26, 26, 26); /* --p-color-bg-inverse */
+  --secondary: rgb(74, 74, 74); /* --p-color-bg-fill-inverse-hover */
+  --secondary-foreground: rgb(227, 227, 227); /* --p-color-text-inverse */
+  --muted: rgb(74, 74, 74); /* --p-color-bg-fill-inverse-hover */
+  --muted-foreground: rgb(181, 181, 181); /* --p-color-text-inverse-secondary */
+  --accent: rgb(227, 227, 227); /* --p-color-bg-surface-brand */
+  --accent-foreground: rgb(26, 26, 26); /* --p-color-bg-inverse */
+  --destructive: rgb(254, 193, 199); /* --p-color-border-critical */
+  --destructive-foreground: rgb(227, 227, 227); /* --p-color-text-inverse */
+  --border: rgb(97, 97, 97); /* --p-color-border-inverse */
+  --input: rgb(48, 48, 48); /* --p-color-bg-surface-inverse */
+  --ring: rgb(197, 208, 255); /* --p-color-text-link-inverse */
+  --chart-1: rgb(82, 244, 144); /* Success in dark mode */
+  --chart-2: rgb(255, 214, 164); /* Warning in dark mode */
+  --chart-3: rgb(255, 235, 120); /* Caution in dark mode */
+  --chart-4: rgb(168, 216, 255); /* Info in dark mode */
+  --chart-5: rgb(181, 181, 181); /* --p-color-text-inverse-secondary */
+  --sidebar: rgb(26, 26, 26); /* --p-color-bg-inverse */
+  --sidebar-foreground: rgb(227, 227, 227); /* --p-color-text-inverse */
+  --sidebar-primary: rgb(227, 227, 227); /* --p-color-bg-surface-brand */
+  --sidebar-primary-foreground: rgb(26, 26, 26); /* --p-color-bg-inverse */
+  --sidebar-accent: rgb(227, 227, 227); /* --p-color-bg-surface-brand */
+  --sidebar-accent-foreground: rgb(26, 26, 26); /* --p-color-bg-inverse */
+  --sidebar-border: rgb(97, 97, 97); /* --p-color-border-inverse */
+  --sidebar-ring: rgb(197, 208, 255); /* --p-color-text-link-inverse */
 
-  --success: #36fba1;
-  --success-foreground: #1a1a1a;
-  --warning: #ffda82;
-  --warning-foreground: #1a1a1a;
-  --info: #54a3ff;
-  --info-foreground: #1a1a1a;
+  --success: rgb(82, 244, 144); /* Success in dark mode */
+  --success-foreground: rgb(1, 75, 64); /* Dark text on success */
+  --warning: rgb(255, 214, 164); /* Warning in dark mode */
+  --warning-foreground: rgb(37, 26, 0); /* Dark text on warning */
+  --info: rgb(168, 216, 255); /* Info in dark mode */
+  --info-foreground: rgb(0, 33, 51); /* Dark text on info */
+  --caution: rgb(255, 235, 120); /* Caution in dark mode */
+  --caution-foreground: rgb(51, 46, 0); /* Dark text on caution */
 }
 
 @theme inline {
-  /* Updated font reference to Inter */
+  /* Updated font reference to Inter for Polaris compliance */
   --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
   --color-background: var(--background);
@@ -133,13 +139,15 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* Added Shopify status color tokens */
+  /* Added Polaris status color tokens */
   --color-success: var(--success);
   --color-success-foreground: var(--success-foreground);
   --color-warning: var(--warning);
   --color-warning-foreground: var(--warning-foreground);
   --color-info: var(--info);
   --color-info-foreground: var(--info-foreground);
+  --color-caution: var(--caution);
+  --color-caution-foreground: var(--caution-foreground);
 }
 
 @layer base {
@@ -147,6 +155,25 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+
+  /* Added Polaris-specific typography styles */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium;
+  }
+
+  /* Polaris button styles */
+  .polaris-button-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 font-medium;
+  }
+
+  .polaris-button-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80 border border-border;
   }
 }

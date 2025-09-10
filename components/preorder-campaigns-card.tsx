@@ -1,27 +1,18 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { Search } from "lucide-react"
-import Link from "next/link"
 
 export function PreorderCampaignsCard() {
   return (
     <Card className="bg-card border-border shadow-sm rounded-lg">
       <CardHeader className="pb-4">
-        <div className="flex items-center justify-between">
-          <div>
-            <CardTitle className="text-xl font-semibold text-card-foreground">Preorder campaigns</CardTitle>
-            <CardDescription className="text-muted-foreground mt-2 text-sm leading-relaxed">
-              Create tailored preorder campaigns for your products with customizable payment, fulfillment, and inventory
-              rules. Set discounts and personalize widget appearance for each campaign.
-            </CardDescription>
-          </div>
-          <Link href="/campaigns/create">
-            <Button className="bg-foreground text-background hover:bg-foreground/90 font-medium px-4 py-2 text-sm">
-              Create campaign
-            </Button>
-          </Link>
+        <div>
+          <CardTitle className="text-xl font-semibold text-card-foreground">Preorder campaigns</CardTitle>
+          <CardDescription className="text-muted-foreground mt-2 text-sm leading-relaxed">
+            Create tailored preorder campaigns for your products with customizable payment, fulfillment, and inventory
+            rules. Set discounts and personalize widget appearance for each campaign.
+          </CardDescription>
         </div>
       </CardHeader>
       <CardContent>
